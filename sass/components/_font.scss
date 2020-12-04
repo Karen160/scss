@@ -1,0 +1,31 @@
+//Balises aux styles communes
+h2 {
+    font-size: $size-title;
+    color: $color-title;
+    font-family: $font;
+    font-weight: $sB; 
+    padding: $padding-title 0 14px;
+    text-transform: $cap;
+}
+
+p {
+    font-size: $size-p;
+    color: $color;
+    font-family: $font;
+    font-weight: $light; 
+}
+
+//Image de fond
+.back {
+    position: $ab;
+    width: 100%;
+    z-index: 0;
+}
+
+//Sous-titre au dessus des titres
+.sous-titre {
+    font-size: $size-minTitle;
+    color: $color-minTitle;
+    font-family: $font-minTitle;
+    font-weight: $norm;
+}

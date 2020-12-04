@@ -1,0 +1,49 @@
+//Couleurs
+$color: #7a839e;
+$colorW: #ffffff;
+$color-title: #42495b;
+$color-minTitle : #7e76f9;
+$color-button: linear-gradient(to left, #6156f9, #1a129f);
+$color-price : #1000ff;
+
+//Tailles de texte
+$size-p : 16px;
+$size-title : 50px;
+$size-minTitle : 20px;
+$size-button : 12px;
+
+//Polices
+$font : 'Poppins', sans-serif;
+$font-service : 'Lato', sans-serif;
+$font-minTitle : 'Lobster', sans-serif;
+
+//Margin et padding
+$padding-title : 9px;
+$auto : 0 auto;
+
+//Bordure
+$border-button: 25px;
+$border-card: 36px;
+
+//Gras
+$light : 300;
+$norm : 500;
+$sB : 600;
+$bold : 700;
+
+//Transformation texte
+$maj : uppercase;
+$cap : capitalize;
+$nul : none;
+$milieu : center;
+
+//Position, agencement
+$rel : relative;
+$ab : absolute;
+$between : space-between;
+$around : space-around;
+
+//Responsive
+$grand : 1300px;
+$moyen : 900px;
+$petit : 550px;

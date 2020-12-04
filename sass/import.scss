@@ -1,0 +1,18 @@
+//Variables
+@import './helpers/variable.scss';
+
+//Remise à 0, balises styles communes, boutons
+@import './components/reset.scss';
+@import './components/font.scss';
+@import './components/cta.scss';
+
+@import './components/header.scss';
+
+//Style des id dans le main
+@import './components/socialMedia.scss';
+@import './components/bio.scss';
+@import './components/service.scss';
+@import './components/price.scss';
+@import './components/contact.scss';
+
+@import './components/footer.scss';

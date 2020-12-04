@@ -1,0 +1,75 @@
+#bio {
+    display: flex;
+    justify-content: $around;
+
+    .back {
+        position: $ab;
+        right: 0;
+        width: 863px;
+        height: auto;
+        padding: 0;
+    }
+
+    img {
+        position: $rel;
+        z-index: 1;
+        padding-left: 10%;
+        width: 653px;
+        padding-top: 120px;
+    }
+
+    article {
+        position: $rel;
+        margin: $auto;
+        padding-top: 120px;
+
+        p {
+            padding-bottom: 32px;
+            width: 533px;
+        }
+
+        .sous-titre {
+            padding: 0;
+        }
+
+        button {
+            font-weight: $sB;
+            font-size: $size-p;
+        }
+    }
+}
+
+@media screen and (max-width: $grand) {
+    #bio {
+        margin-top: 150px;
+
+        img {
+            width: 326.5px;
+            margin: auto;
+            padding-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: $moyen) {
+    #bio {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+
+        img{
+            padding-top: 0;
+        }
+
+        article {
+            margin: 50px 0 30px;
+            text-align: $milieu;
+            padding-top: 0;
+
+            p {
+                margin: $auto;
+                width: 90%;
+            }
+        }
+    }
+}

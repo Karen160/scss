@@ -1,0 +1,64 @@
+//Style des différents boutons
+.blue {
+    background-image: $color-button;
+    color: $colorW;
+    text-transform: $maj;
+    padding: 13px 40px;
+    border-radius: $border-button;
+    border: $nul;
+    font-weight: $norm;
+    font-size: $size-p;
+    font-family: $font;
+}
+
+.white {
+    background-color: $colorW;
+    color: $color-title;
+    text-transform: $cap;
+    padding: 13px 40px;
+    border-radius: $border-button;
+    border: $color-price 1px solid;
+    font-weight: $sB;
+    font-size: $size-p;
+    font-family: $font;
+}
+
+//Bouton rond de la section "présentation"
+.souris {
+    padding: 20px 26px;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+    background-color: $colorW;
+    border: $nul;
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+    margin-top: 600px;
+
+    img {
+        width: 28px;
+        object-fit: contain;
+    }
+}
+
+//Bouton bleu en petit dans la section "service"
+.mini {
+    font-size: $size-button;
+    font-weight: $norm;
+    padding: 6px 18px;
+    margin-right: 35px;
+    margin-bottom: 27px;
+    position: $ab;
+    right: 0;
+    bottom: 0;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width: $moyen) {
+    .souris {
+        display: $nul;
+    }
+}

@@ -1,0 +1,121 @@
+header {
+    display: flex;
+    justify-content: $around;
+
+    .back {
+        top: 0;
+        right: 0;
+        width: auto;
+    }
+
+    div {
+        align-items: flex-end;
+        display: flex;
+        position: $rel;
+        margin-top: 20px;
+
+        img {
+            width: 80px;
+        }
+
+        span {
+            color: #484848;
+            font-family: $font;
+            font-size: 40px;
+            padding-left: 18px;
+            font-weight: $bold;
+        }
+    }
+
+    //Menu
+    nav {
+        display: flex;
+        width: 352px;
+        justify-content: $between;
+        position: $rel;
+        margin-top: 55px;
+        height: 30px;
+
+        a {
+            font-weight: $norm;
+            color: $colorW;
+            font-size: $size-p;
+            text-transform: $maj;
+            font-family: $font;
+
+        }
+
+        a:hover {
+            border-bottom: 1px solid $colorW;
+        }
+    }
+}
+
+@media screen and (max-width: $grand) {
+    header {
+
+        .back {
+            width: 500px;
+        }
+
+        div {
+            margin-top: 30px;
+
+            img {
+                width: 50px;
+            }
+
+            span {
+                color: #484848;
+                font-family: $font;
+                font-size: 25px;
+                padding-left: 18px;
+                font-weight: $bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $petit) {
+    header {
+        display: block;
+
+        .back {
+            display: $nul;
+        }
+
+        div {
+            margin: 30px auto;
+            width: 200px;
+
+            img {
+                width: 50px;
+            }
+
+            span {
+                color: #484848;
+                font-family: $font;
+                font-size: 25px;
+                padding-left: 18px;
+                font-weight: $bold;
+            }
+        }
+
+        nav {
+            margin: $auto;
+            width: 300px;
+
+            a {
+                color: #484848;
+                font-size: $size-p;
+                text-transform: $maj;
+                font-family: $font;
+            }
+
+            a:hover {
+                border-bottom: 1px solid $color-minTitle;
+                color: $color-minTitle;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+#contact {
+    padding: 110px 0 135px;
+
+    .sous-titre {
+        text-align: $milieu;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: $norm;
+        text-align: $milieu;
+        padding-bottom: 40px;
+
+        span {
+            text-transform: $cap;
+            font-weight: $sB;
+        }
+    }
+
+    article {
+        text-align: $milieu;
+
+        label{
+            visibility: hidden;
+        }
+
+        input {
+            height: 50px;
+            width: 430px;
+            padding-left: 30px;
+            font-family: $font;
+            font-size: $size-button;
+            color: #999999;
+            background-color: #f6f7fb;
+            border: $nul;
+            margin-right: 25px;
+            opacity: 0.6;
+        }
+
+        button {
+            text-transform: $cap;
+        }
+    }
+}
+
+@media screen and (max-width: $petit) {
+    #contact {
+        article {
+
+            input {
+                width: 90%;
+                margin-right: 0px;
+            }
+
+            button {
+                margin: 10px;
+            }
+        }
+    }
+}

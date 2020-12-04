@@ -1,0 +1,129 @@
+footer {
+    display: flex;
+    justify-content: $around;
+    flex-wrap: wrap;
+
+    .back {
+        height: 567px;
+    }
+
+    section {
+        position: $rel;
+        z-index: 1;
+        margin: 10px 20px;
+
+        h2 {
+            padding: 250px 0 0 0;
+            font-weight: $norm;
+            text-transform: none;
+            color: $colorW;
+            text-align: $milieu;
+        }
+
+        .sous-titre {
+            font-size: 30px;
+            font-family: $font;
+            color: $colorW;
+            text-align: $milieu;
+        }
+
+        h3 {
+            font-family: $font;
+            font-size: $size-minTitle;
+            font-weight: $norm;
+            color: $colorW;
+            padding: 250px 0 30px;
+        }
+
+        a {
+            color: $colorW;
+            font-family: $font;
+            font-size: $size-p;
+            display: block;
+            padding-bottom: 15px;
+        }
+
+        div {
+            display: flex;
+            width: 200px;
+            justify-content: $between;
+
+            p {
+                color: $colorW;
+                padding-bottom: 15px;
+            }
+        }
+
+        #iconeFooter {
+            padding-top: 25px;
+            justify-content: $between;
+            align-items: $milieu;
+
+
+            a {
+                width: auto;
+                height: auto;
+                align-items: $milieu;
+                padding: 0;
+
+                //Icone des réseaux sociaux
+                img {
+                    filter: brightness(0) invert(1); //blanc
+                    width: 20px;
+                    cursor: pointer;
+                    display: block;
+                }
+            }
+
+            //Icone facebook et google plus
+            a:nth-child(1),
+            a:nth-child(2) {
+                transform: rotate(-90deg);
+                margin: 0px 0;
+            }
+        }
+    }
+
+    #contactFooter {
+
+        div {
+            justify-content: unset;
+            width: auto;
+            align-items: baseline;
+
+            img {
+                width: 15px;
+                height: 15px;
+                margin-right: 7px;
+            }
+        }
+
+        div:last-child {
+            padding-top: 30px;
+        }
+    }
+
+}
+
+@media screen and (max-width: $moyen) {
+    footer {
+        background-image: $color-button;
+
+        .back {
+            display: $nul;
+        }
+
+        section {
+            text-align: $milieu;
+            border-bottom: 1px solid $colorW;
+
+            h3 {
+                padding-top: 30px;
+            }
+
+            h2 {
+                padding-top: 0;
+            }
+        }
+    }
+}

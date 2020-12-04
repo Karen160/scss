@@ -1,0 +1,110 @@
+#socialMedia {
+    display: flex;
+    justify-content: $around;
+    position: $rel;
+    height: 100vh;
+
+    article:first-child {
+        display: flex;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        margin-top: 300px;
+        height: auto;
+
+        //Icone réseaux sociaux
+        img {
+            width: 55px;
+            padding: 20px;
+        }
+    }
+
+    //Barre bleu après les icones des réseaux sociaux
+    article:first-child::after {
+        content: "";
+        width: 3px;
+        height: 30px;
+        background-image: $color-button;
+        margin: $auto;
+    }
+
+    article {
+        margin: 140px 0 0 50px;
+
+        h1 {
+            color: $color-title;
+            font-size: 50px;
+            text-transform: $maj;
+            font-family: $font;
+            font-weight: $norm;
+            line-height: 1.2;
+
+            span {
+                font-weight: $bold;
+                font-size: 74px;
+            }
+        }
+
+        p {
+            text-transform: $maj;
+            padding: 20px 0;
+        }
+    }
+
+    //Grande image
+    button+img {
+        width: 622px;
+        height: 607px;
+    }
+}
+
+
+
+@media screen and (max-width: $grand) {
+    #socialMedia {
+        height: auto;
+
+        button+img {
+            width: 311px;
+            height: 303.5px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: $moyen) {
+    #socialMedia {
+        display: block;
+
+        article {
+            margin: 100px 0 30px;
+            text-align: $milieu;
+        }
+
+        article:first-child {
+            display: $nul;
+        }
+    }
+
+    button+img {
+        display: block;
+        margin: $auto;
+    }
+}
+
+@media screen and (max-width: $petit) {
+    #socialMedia {
+
+        article {
+            margin-top: 70px;
+
+            h1,
+            h1 span {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
